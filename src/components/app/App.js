@@ -1,5 +1,5 @@
 import './App.scss';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import Search from '../search/search';
 import Dashboard from '../Dashboard/Dashboard';
 import AsideMenu from '../asideMenu/asideMenu';

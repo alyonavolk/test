@@ -1,0 +1,19 @@
+@import '../../style/variables.scss';
+
+.search{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    &__input {
+        width: 300px;
+    }
+    
+    @media (max-width: 375px) {
+        flex-direction: column;
+        &__profile{
+            margin-top: 10px;
+            margin-left: 60%;
+        }
+    }
+}

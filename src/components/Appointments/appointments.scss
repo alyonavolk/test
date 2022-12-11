@@ -1,0 +1,100 @@
+@import '../../style/variables.scss';
+
+.appointments{
+    width: 1040px;
+    &__row{
+        width: 1060px;
+        table {
+            border-collapse: collapse;
+            thead{
+                tr{
+                    @extend %subtitle2;
+                    text-align: left;
+                    color: black;
+                    background-color: $divider;
+                    filter: opacity(25%);
+                    th{
+                        padding: 10px 0;
+                        &:nth-child(1){
+                            padding-left: 24px;
+                            width: 180px;
+                        }
+                        &:nth-child(2){
+                            width: 195px;
+                        }
+                        &:nth-child(3){
+                            width: 20px;
+                            padding: 0 24px;
+                        }
+                        &:nth-child(4){
+                            width: 105px;
+                        }
+                        &:nth-child(5){
+                            width: 150px;
+                            padding: 0 24px;
+                        }
+                        &:nth-child(6){
+                            width: 130px;
+                        }
+                        &:nth-child(7){
+                            width: 85px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__search{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: 375px) {
+            flex-direction: column;
+            &__profile{
+                margin-top: 10px;
+                margin-left: 60%;
+            }
+        }
+    }
+    &__title{
+        @extend %h2;
+    }
+    &__table{
+        margin-top: 25px;
+        max-width: 1060px;
+        background-color: $white-color;
+        box-shadow: 0px 12px 26px rgba(16, 30, 115, 0.06);
+        border-radius: 8px;
+        &__button{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        @media (max-width: 1024px) {
+            overflow-x: scroll;
+        }
+    }
+    @media (max-width: 768px) {
+        max-width: 700px;
+    }
+    @media (max-width: 568px) {
+        max-width: 550px;
+    }
+    
+    @media (max-width: 425px) {
+        max-width: 415px;
+        &__search{
+            flex-direction: column;
+            margin-bottom: 50px;
+            &_profile{
+                margin-top: 10px;
+                margin-left: 60%;
+            }
+        }
+    }
+    @media (max-width: 375px) {
+        max-width: 320px;
+    }
+    
+}
